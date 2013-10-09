@@ -6,6 +6,7 @@
 body { line-height: 1.5; }
 body, select, input, textarea {
   color: #444;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
   margin: 0 0 0.25em 0;
@@ -45,10 +46,6 @@ hr {
   border-right: 0;
   border-left: 0;
 }
-.container hr {
-  margin-right: -10px;
-  margin-left: -10px;
-}
 .capitalize { text-transform: capitalize; }
 
 /* Images */
@@ -69,29 +66,20 @@ img {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  color: #268099;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #a1cbcf;
-  box-shadow: 0 0 0.325em rgba(0,0,0,0.25);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  border: 3px solid #7ec4d8;
-  border-radius: 3px;
-}
-.btn-primary,
-.btn-primary:visited,
-.btn-primary:link {
-  background-color: #268099;
-  border-color: #48a5bf;
   color: #fff;
+  text-decoration: none;
+  background-color: #003366;
+  box-shadow: 0 0 0.325em rgba(0,0,0,0.25);
+  font-weight: 600;
+  border: 3px solid #004d99;
+  border-radius: 3px;
 }
 .btn-block,
 .btn-block:visited,
 .btn-block:link {
   clear: both;
   display: block;
-  margin: 0 0 1.2em;
+  margin: 0 0 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.5em;
 	-webkit-box-sizing: border-box;
@@ -200,6 +188,8 @@ body {
 .shareabouts-list {
   font-size: 1.25em;
   font-weight: bold;
+  margin-left: 0;
+  list-style: none;
 }
 
 
@@ -228,10 +218,31 @@ body {
     padding-top: 60px;
     font-size: 1.5em;
   }
+  .welcome {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.75;
+  }
 }
 
 @media only screen and (min-width: 970px) {
   body {
-    padding-bottom: 2em;
+    padding-bottom: 40px;
+  }
+  .container {
+    padding: 40px;
+    padding-right: 380px;
+    position: relative;
+  }
+  .shareabouts {
+    float: right;
+    width: 300px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .shareabouts p {
+    font-size: 0.85em;
+    font-weight: bold;
   }
 }
