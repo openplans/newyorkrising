@@ -69,10 +69,19 @@ img {
   color: #fff;
   text-decoration: none;
   background-color: #003366;
-  box-shadow: 0 0 0.325em rgba(0,0,0,0.25);
+  box-shadow: 0 0.125em 0.125em rgba(0,0,0,0.5);
   font-weight: 600;
   border: 3px solid #004d99;
   border-radius: 3px;
+}
+.btn-disabled,
+.btn-disabled:visited,
+.btn-disabled:link {
+  background-color: #ddd;
+  border-color: #ccc;
+  color: #bbb;
+  box-shadow: none;
+  cursor: default;
 }
 .btn-block,
 .btn-block:visited,
