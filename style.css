@@ -61,7 +61,7 @@ img {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  padding: 0.325em 0.5em 0.125em;
+  padding: 0.25em 0.5em 0.25em;
   margin-bottom: 0;
   text-align: center;
   vertical-align: middle;
@@ -88,9 +88,9 @@ img {
 .btn-block:link {
   clear: both;
   display: block;
-  margin: 0 0 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.5em;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  padding: 0.5em 0.5em 0.625em;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -102,6 +102,12 @@ img {
 }
 .btn-small {
   font-size: 0.85em;
+}
+.coming-soon {
+  display: block;
+  font-size: 0.625em;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 /* Forms */
