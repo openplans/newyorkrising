@@ -194,10 +194,12 @@ body {
 }
 .site-title span {
   display: block;
-  padding-top: 45px;
+  padding-top: 20px;
+  line-height: 1.2;
 }
 .site-logo {
   float: left;
+  margin-top: -15px;
 }
 
 
@@ -247,6 +249,9 @@ body {
     font-size: 1.25em;
     max-width: 32em;
     padding-top: 50px;
+  }
+  .site-logo {
+    margin-top: -10px;
   }
 }
 
