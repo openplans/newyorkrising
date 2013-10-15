@@ -213,25 +213,22 @@ body {
   list-style: none;
 }
 
-.what-btn {
+a.what-btn {
   color: #004d99;
   font-size: 1.25em;
   font-weight: bold;
   display: block;
   margin: 0.75em 0;
+  text-decoration: none;
 }
-.what-btn:hover { 
+a.what-btn:hover { 
   color: #003366;
 }
-.what-checkbox {}
 .what-text {
   background: #eee;
   padding: 1em 1.5em;
   border-radius: 3px;
   font-size: 0.85em;
-}
-.what-checkbox:checked + .what-text {
-  display: none;
 }
 
 

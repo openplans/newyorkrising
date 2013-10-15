@@ -30,7 +30,9 @@
   <![endif]-->
 
 </head>
-<body><div class="page">
+<body>
+
+<div class="page">
 
   <div class="site-header clearfix">
     <h1 class="site-title"><img class="site-logo" src="http://stormrecovery.ny.gov/sites/all/themes/nysandyredesign/images/ny-rising-crz.png"><span>New York Rising Community Reconstruction Program <strong>Community Mapping</strong></span></h1>
@@ -63,9 +65,8 @@
       </ul>
     </div>
 
-    <label class="what-btn" for="what-1" id="what-info-are-you-requesting">What information are you requesting from me?</label>
-    <input type="checkbox" id="what-1" class="what-checkbox is-hidden" checked="checked">
-    <section class="what-text">
+    <a href="#" class="what-btn what-btn-1" id="what-info-are-you-requesting">What information are you requesting from me?</a>
+    <section class="what-text what-text-1 is-hidden">
       <ol>
         <li>Confirm important <strong>Community Assets</strong></li>
         <li>Tell us <strong>Storm Recovery and Resiliency Needs</strong></li>
@@ -84,9 +85,8 @@
       </ul>
     </section>
 
-    <label class="what-btn" for="what-2" id="what-will-you-do-with-info">What will you do with this information?</label>
-    <input type="checkbox" id="what-2" class="what-checkbox is-hidden" checked="checked">
-    <section class="what-text">
+    <a href="#" class="what-btn what-btn-2" id="what-will-you-do-with-info">What will you do with this information?</a>
+    <section class="what-text what-text-2 is-hidden">
       <p>We will compile your input into the draft and final Community Reconstruction Plan:</p>
       <ul>
         <li>All corrected <strong>community asset information</strong> will be incorporated into the Plan’s asset inventory</li>
@@ -96,7 +96,26 @@
       <p>Your input will be visible to all other map users, your community Planning Committee, the Community planning consultants, and the NY State New York Rising team.</p>
     </section>
 
-  </div>
+  </div><!-- /.container -->
 
-</div></body>
+</div><!-- /.page -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+    $(".what-btn-1").click(function(){
+      $(".what-text-1").toggleClass("is-hidden");
+      return false; 
+    });
+
+    $(".what-btn-2").click(function(){
+      $(".what-text-2").toggleClass("is-hidden");
+      return false; 
+    });
+
+  });
+</script>
+
+</body>
 </html>
