@@ -22,7 +22,7 @@ a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #003366; }
 a:hover { color: #004d99; }
 p { margin: 0 0 1.2em; }
-ul, ol { margin-left: 1.8em; }
+ul, ol { /*margin-left: 1.8em;*/ }
 ol { list-style-type: decimal; }
 ul, ol, dl { margin-bottom: 0.6em; }
 ul li, ol li { padding-bottom: 0.6em; }
@@ -61,7 +61,7 @@ img {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  padding: 0.325em 0.5em 0.125em;
+  padding: 0.25em 0.5em 0.25em;
   margin-bottom: 0;
   text-align: center;
   vertical-align: middle;
@@ -88,9 +88,9 @@ img {
 .btn-block:link {
   clear: both;
   display: block;
-  margin: 0 0 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.5em;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  padding: 0.5em 0.5em 0.625em;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -102,6 +102,12 @@ img {
 }
 .btn-small {
   font-size: 0.85em;
+}
+.coming-soon {
+  display: block;
+  font-size: 0.625em;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 /* Forms */
@@ -162,11 +168,15 @@ body {
 }
 .page {
   max-width: 960px;
+  min-height: 50em;
   margin: 0 auto;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 .container {
   padding: 1em;
+}
+.page-nav {
+  display: none;
 }
 
 
@@ -184,10 +194,12 @@ body {
 }
 .site-title span {
   display: block;
-  padding-top: 45px;
+  padding-top: 20px;
+  line-height: 1.2;
 }
 .site-logo {
   float: left;
+  margin-top: -15px;
 }
 
 
@@ -199,6 +211,24 @@ body {
   font-weight: bold;
   margin-left: 0;
   list-style: none;
+}
+
+a.what-btn {
+  color: #004d99;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: block;
+  margin: 0.75em 0;
+  text-decoration: none;
+}
+a.what-btn:hover { 
+  color: #003366;
+}
+.what-text {
+  background: #eee;
+  padding: 1em 1.5em;
+  border-radius: 3px;
+  font-size: 0.85em;
 }
 
 
@@ -217,6 +247,9 @@ body {
     max-width: 32em;
     padding-top: 50px;
   }
+  .site-logo {
+    margin-top: -10px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -228,15 +261,32 @@ body {
     font-size: 1.5em;
   }
   .welcome {
-    font-size: 1.25em;
+/*    font-size: 1.25em;
     font-weight: 300;
-    line-height: 1.75;
+    line-height: 1.75;*/
   }
 }
 
 @media only screen and (min-width: 970px) {
   body {
     padding-bottom: 40px;
+  }
+  .page-nav {
+/*    display: block;*/
+  }
+  .page-nav a {
+    float: left;
+    width: 50%;
+    background-color: #003366;
+    color: #fff;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  .page-nav a:hover {
+    background-color: #004d99;
   }
   .container {
     padding: 40px;
